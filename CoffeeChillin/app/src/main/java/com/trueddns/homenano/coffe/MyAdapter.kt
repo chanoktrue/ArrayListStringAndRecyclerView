@@ -20,7 +20,10 @@ class MyAdapter(private val postList: List<Coffee>, private  val context: Contex
 
         holder.bindCardView!!.setOnClickListener{
             val intent = Intent(context, DetailActivity::class.java)
-            intent.putExtra("ID", postList[position].id)
+            intent.putExtra("id", postList[position].id)
+            intent.putExtra("title", postList[position].title)
+            intent.putExtra("thumbnail", postList[position].thumbnail)
+            intent.putExtra("content", postList[position].content)
             context!!.startActivity(intent)
         }
 

@@ -14,8 +14,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 class MainActivity : AppCompatActivity() {
 
     //https://antchatbot.firebaseio.com/coffee.json
-    var url = "https://antchatbot.firebaseio.com/"
-    var recyclerView: RecyclerView? = null
+    private var url = "https://antchatbot.firebaseio.com/"
+    private var recyclerView: RecyclerView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
